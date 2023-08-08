@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header css starts here... */
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #e6e3e3;
+}
+#signupBtn, #signinBtn{
+    background-color: rgb(93, 93, 243);
+    border: none;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 5px;
+}
+li{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+li>img{
+    width: 20%;
+}
+
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    list-style: none;
+}
+.container ul>li>a{
+    text-decoration: none;
+}
+
+/*  modal css starts here... */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* gap:5% */
+  }
+  /* sign up Modal Content */
+.signupmodal-content ,form{
+    margin: auto;
+    width: 60%;
+    display: grid;
+    gap:5px;
+  }
+  
+  form{
+    background-color: #fff;
+  }
+  #formheading{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  gap: 7rem;
+  }
+  #formheading>h1{
+    font-weight: lighter;
+  }
+  form>hr {
+    margin-top: -10px;
+    width: 95%;
+  }
+  label{
+    margin: 0 10px 0 10px;
+  }
+  
+  input[type=text], input[type=password]{
+    padding: 10px;
+    margin: 1px;
+    background-color: #e4e2e2;
+    border: none;
+
+  }
+  #formsignbtn{
+    margin:10px;
+    background-color: rgb(7, 199, 7);
+    color: #fff;
+    padding: 10px;
+    border: none;
+  }
+  /* The Close Button */
+  #formheading>.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #formheading>.close:hover,
+  #formheading>.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* sign in css starts here... */
+
+  .signinmodal-content ,form{
+    margin: auto;
+    width: 60%;
+    display: grid;
+    gap:5px;
+  }
+  
+  
+  #formheadingsignin{
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+  margin: 5px;
+  }
+  #formheadingsignin>h1{
+    font-weight: lighter;
+  }
+ 
+  #formsignbtnsignin{
+    margin:10px;
+    background-color: rgb(7, 199, 7);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  /* The Close Button */
+  #formheadingsignin>.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #formheadingsignin>.close:hover,
+  #formheadingsignin>.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #formfootercontent{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 3%;
+  }
+  #formfootercontent>p:last-child{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* footer sections css starts here... */
+  .footer{
+    background-color: #000;
+    padding: 2%;
+  }
+  .contanerBox{
+    display: flex;
+    column-gap: 10%;
+  }
+  .contanerBox>ul{
+    list-style: none;
+  
+  }
+  .contanerBox ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5% 3%;
+  }
+  .followus>h3{
+    color: #fff;
+  }
+  .followus>ul{
+    display: flex;
+  }
+  .followus>ul>li{
+    padding: 10%;
+  }
+  .copyright,.copyright>a{
+    color: #fff;
+    padding: 1% 0;
+    line-height: 200%;
+  }
+
+  img{
+    width: 5%;
+    margin-bottom: 1%;
+  }
+  /* home css starts here... */
+#home{
+    text-align: center;
+}
+.btn{
+    padding:1%;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+   background-color: rgb(243, 98, 98);
+   
+}
+.viewCourseBtn{
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+
+.collab{
+    background-color: #c9c6c6;
+    padding: 5%;
+}
+.collab>img{
+    width: 15%;
+    padding: 20px 
+}
+
+   /* courses css starts here... */
+  #courses{
+    text-align: center;
+    margin: 20px;
+margin-top: 10%;
+  }
+  .course{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,100);
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    gap:10px 20px;
+  }
+.course>div{
+    margin: 20px;
+}
+.boxes{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1px;
+}
+.boxes>div{
+    margin: 20px 10px;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.boxes>img{
+    width: 100%;
+}
+.enroll-button{ 
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+   background-color: rgb(243, 98, 98);
+}
+.enroll-button>a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+}
+  /* contactus css starts here... */
+  #contactus{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  #contactus>div{
+    width: 100%;
+  }
+ 
+  form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  form button {
+   padding: 2%;
+  }

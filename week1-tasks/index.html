@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education</title>
+    <!-- Font awesome links -->
+    <script src="https://kit.fontawesome.com/6727a0cafe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header class="header">
+     <div class="container">
+        <ul>
+            <li>
+               <img src="./Images/Images.png" alt="website logo Image"> 
+               <h1>Online Education</h1>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contactus" target="_parent">Contact Us</a></li>
+            <li><div id="buttons">
+                <button id="signinBtn" onclick="SigninModal()">Sign In</button>
+                <button id="signupBtn" onclick="SignupModal()">Sign Up</button>
+            </div></li>
+        </ul>
+     </div>
+    </header>
+    <main>
+          <!-- Signup modal -->
+          <div id="signupModal" class="modal">
+            <!-- Modal content -->
+            <div class="signupmodal-content">
+              <form>
+                <div id="formheading">
+                    <h1>Sign Up</h1> 
+                    <h1 class="close" onclick="closeModal()">&times;</h1>       
+                </div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+                <button type="submit" id="formsignbtn">Sign Up</button>
+                <div id="formfootercontent">
+                    <p>Already have an account??</p>
+                    <p onclick="displaySigninModal()">Sign In</p>       
+                </div>
+              </form>
+            </div>
+          <!-- sign up Modal content ends here...-->
+          </div>
+        <!-- Signup modal ends here...-->
+        <!-- Sign in modal -->
+        <div id="signinModal" class="modal">
+            <!-- Modal content -->
+            <div class="signinmodal-content">             
+              <form>
+                <div id="formheadingsignin">
+                    <h1>Sign In</h1> 
+                    <h1 class="close" onclick="closeModal()">&times;</h1>       
+                </div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit" id="formsignbtnsignin">Sign In</button>
+                <div id="formfootercontent">
+                    <p>Don't have an account??</p>
+                    <p onclick="displaySignupModal()">Sign Up</p>       
+                </div>
+              </form>
+            </div>
+             <!-- Modal content ends here... -->
+          </div>
+          <!-- Sign in modal ends here... -->
+    </main>
+    <section id="home">
+        <h1>Welcome to our Online Course Platform!</h1>
+        <p>Choose from a variety of courses and start learning today.</p>
+        <button class="btn"><a href="#courses" class="viewCourseBtn">View Courses</a></button>
+        <div class="collab">
+            <h1>We collaborate with <a href="investors.html">300+leading universities and companies</a></h1>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1c6RjBHi3Lqb9QpWxje7iA/b529f909c5230af3210ba2d47d149620/google.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt="goggle image">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XkOucZz6pMLV5DPvXCgCL/1777129a58b0a62b237bd28e9956afe8/duke-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="duke image">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/77hmeEJo3ZPlURCU02fD52/aa37b7f7b52285ba350acac62d8af5c1/illinois-3.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="ilusion images">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3toC4I7jbWxiedfxiyNjtT/735faeaf976a9692f425f8c3a7d125dc/1000px-IBM_logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=32" alt="imb images">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/FHOd44z40jTFsSSao84AM/d1e357f5650a23bf2936114112d44445/imperial.png?auto=format%2Ccompress&dpr=1&w=&h=35" alt="immperial collage image">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4FSFmNXuDIzTvFb7n0v4mK/704ae9e0a7981fb6415f4cb4609bbbb3/stanford.svg?auto=format%2Ccompress&dpr=1&w=&h=27" alt="stanford">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1ZeiauXe5bPProvfuIo7o2/55d005d42979ab585cdfa01f825b7d4f/penn.svg?auto=format%2Ccompress&dpr=1&w=&h=37" alt="penn image">
+        </div>
+
+      </section>
+    <section id="courses">
+        <h2> Our Courses</h2>
+        <h3>Whatever your background or interests are, Professional Certificates have you covered.</h3>
+        <div class="course">
+            <div class="boxes">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/44ANFFMFvQDjgd5vZ6p3oI/8afb0be7ec29027def9737f78f9a03f2/cover-android-developer.jpg?auto=format%2Ccompress&dpr=1&w=&h=" alt="Course 1">
+                <h3>Android Developer</h3>
+                <p>Build and write code for mobile apps hosted on Android smartphones and mobile tablets.</p>
+                <h4>Great if you like:</h4>
+                <p>Creative challenges</p>
+                <p>Building better user experiences</p>
+                <p>Using Android products</p>
+                <div>
+                    <span>Price: $2599.99</span>
+                    <button class="enroll-button"> <a href="#" >Enroll Now</a></button>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4gbKow1HQIjUyvr5nvxkbU/b0647c21aba1b4f28c8835dbc95704e8/data-scientist-cover.jpg?auto=format%2Ccompress&dpr=1&w=&h=" alt="img 3">
+
+                <h3>Data Analyst</h3>
+                <p>Collect, organize, and transform data to make informed decisions.</p>
+                <h4>Great if you like:</h4>
+                <p>Attention to detail</p>
+                <p>Problem solving</p>
+                <p>Working with numbers</p>
+                <div>
+                    <span>Price: $199.99</span>
+                    <button class="enroll-button"> <a href="#" >Enroll Now</a></button>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/d3KBmFnS1w0G5KvwNQ7X8/52a8514859266537014ab660f3362f4e/social-media-marketer.jpg?auto=format%2Ccompress&dpr=1&w=&h=" alt="Course 1">
+
+                <h3>Front-End Developer</h3>
+                <p>Design and develop the look, feel, function, and user experience of a website.</p>
+                <h4>Great if you like:</h4>
+                <p>Problem solving</p>
+                <p>Thinking creatively</p>
+                <p>Creating great user experiences </p>
+                <div>
+                    <span>Price: $1999.99</span>
+                    <button class="enroll-button"> <a href="#" >Enroll Now</a></button>
+                </div>
+            </div>
+            <div class="boxes">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/62YEtEKcqhqnwT8lBePhBW/03f6af20abaf6e6c162ecb79e18940b5/cover-frontend-developer.jpg?auto=format%2Ccompress&dpr=1&w=&h=" alt="img 3">
+                <h3>Social Media Marketer</h3>
+                <p>Social media specialists establish, build, and manage a company’s social media.</p>
+                <h4>Great if you like:</h4>
+                 <p>Thinking creatively</p>
+                 <p>Engaging with people</p>
+                 <p>Following trends</p>
+                <div>
+                    <span>Price: $599.99</span>
+                    <button class="enroll-button"> <a href="#" >Enroll Now</a></button>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+    <section id="contactus">
+        <div>
+            <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+    </div>
+      </section>
+    <footer class="footer">
+        <img src="./Images/Images.png" alt="website logo Image"> 
+    <div class="contanerBox">
+       <ul>
+        <li><a href="">Alumni</a></li>
+        <li><a href="">Our Team</a></li>
+        <li><a href="">Newsroom</a></li>
+        <li><a href="">Referral Program</a></li>
+        <li><a href="">Learn</a></li>
+       </ul>
+       <ul>
+        <li><a href="">Hire From Us</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Our Investors</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Talent Circle</a></li>
+       </ul>
+       <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Become Coach</a></li>
+        <li><a href="">Industry Mentors</a></li>
+       </ul>
+       <div class="followus">
+        <h3>Follow Us-</h3>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-twitter fa-bounce fa-2xl"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook fa-bounce fa-2xl"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin fa-bounce fa-2xl"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-bounce fa-2xl"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github fa-bounce fa-2xl"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube fa-bounce fa-2xl"></i></a></li>
+
+        </ul>
+       </div>
+    </div>
+    <hr>
+    <div class="copyright">
+        <h3>© 2023 by Online Education|</h3>
+        <a href=""><span>Privacy Policy & Terms and Conditions</span></a>
+        
+    </div>
+    </footer>
+</body>
+<script src="scripts/common.js"></script>
+<script src="scripts/index.js"></script>
+</html>
+
+
+
+
+
+
+
+
